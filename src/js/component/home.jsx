@@ -25,9 +25,17 @@ const Home = () => {
 	  <div className="container vh-100">
 		<div className="row bg-dark mx-auto" style={{ width: "40px", height: "100px" }}></div>
 		<div className="row bg-dark mx-auto d-grid p-2 rounded" style={{ width: "200px", height: "400px" }}>
-		  <div className={`col-7 rounded-circle mx-auto bg-danger ${color === 'red' ? 'active' : ''}`} id="red" onClick={handleClick} ref={color === 'red' ? selectedLightRef : null}></div>
-		  <div className={`col-7 rounded-circle mx-auto bg-warning ${color === 'yellow' ? 'active' : ''}`} id="yellow" onClick={handleClick} ref={color === 'yellow' ? selectedLightRef : null}></div>
-		  <div className={`col-7 rounded-circle mx-auto bg-success ${color === 'green' ? 'active' : ''}`} id="green" onClick={handleClick} ref={color === 'green' ? selectedLightRef : null}></div>
+		  <div className={`col-7 rounded-circle mx-auto bg-danger ${color === 'red' ? 'active' : ''}`} 
+		  id="red" onClick={handleClick} ref={color === 'red' ? selectedLightRef : null}></div>
+		  <div className={`col-7 rounded-circle mx-auto bg-warning ${color === 'yellow' ? 'active' : ''}`} 
+		  id="yellow" onClick={handleClick} ref={color === 'yellow' ? selectedLightRef : null}></div>
+		  <div className={`col-7 rounded-circle mx-auto bg-success ${color === 'green' ? 'active' : ''}`} 
+		  id="green" onClick={handleClick} ref={color === 'green' ? selectedLightRef : null}></div>
+		</div>
+		<div className="row m-3">
+			<div className="col-4 mx-auto text-center">
+				<button className="btn btn-primary">Start Traffic Light</button>
+			</div>
 		</div>
 	  </div>
 	);
