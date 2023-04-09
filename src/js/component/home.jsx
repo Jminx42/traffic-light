@@ -6,11 +6,33 @@ import LightColor from "./lightColor.jsx";
 const Home = () => {
 	const [color, setColor] = useState("");
 	const selectedLightRef = useRef(null);
+	const [isSelected, setIsSelected] = useState(false);
   
 	const handleClick = (event) => {
 	  setColor(event.target.id);
+	  const selectedLight = selectedLightRef.current;
+	  setIsSelected(true);
+	  if (isSelected && selectedLight.classList.contains('active')){
+		selectedLight.classList.remove("glow");
+		selectedLight.classList.remove("active");
+	  } else {
+		selectedLight.classList.add("glow");
+		selectedLight.classList.add("active");
+	  }
 	};
   
+	// useEffect(() => {
+		
+	// 	const selectedLight = selectedLightRef.current;
+	// 	if (isSelected) {
+	// 		selectedLight.classList.add("glow");
+	// 	} else {
+	// 		selectedLight.classList.remove("glow");
+	// 	}
+	
+	  
+	// }, [isSelected])
+	
 	useEffect(() => {
 		const selectedLight = selectedLightRef.current;
 		if (selectedLight) {
@@ -19,7 +41,7 @@ const Home = () => {
 			selectedLight.classList.remove("glow");
 		  };
 		}
-	}, [color]);
+	}, [color, isSelected]);
   
 	return (
 	  <div className="container vh-100">
