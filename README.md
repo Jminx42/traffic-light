@@ -20,23 +20,6 @@ From now on, every time we use the function `setColor` to change the variable co
 
 > You can [read more about hooks here](https://content.breatheco.de/lesson/react-hooks-explained).
 
-## 🌱  How to start this project
-
-Do not clone this repository because we are going to be using a different template.
-
-We recommend opening the `react boilerplate ` using a provisioning tool like [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recommended) or [Gitpod](https://4geeks.com/lesson/how-to-use-gitpod). Alternatively, you can clone it on your local computer using the `git clone` command.
-
-This is the repository you need to open or clone:
-
-```
-https://github.com/4GeeksAcademy/react-hello
-```
-
-**👉 Please follow these steps on** [how to start a coding project](https://4geeks.com/lesson/how-to-start-a-project).
-
-💡 Important: Remember to save and upload your code to GitHub by creating a new repository, updating the remote (`git remote set-url origin <your new url>`), and uploading the code to your new repository using the `add`, `commit` and `push` commands from the git terminal.
-
-
 ## 📝 Instructions
 
 Let's simulate a traffic light [like this one](https://github.com/breatheco-de/exercise-traffic-light-react/blob/master/preview.gif).
