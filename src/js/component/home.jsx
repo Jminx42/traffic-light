@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import LightColor from "./lightColor.jsx";
 
-//create your first component
 const Home = () => {
   const colors = ["danger", "warning", "success"];
   const selectedLightRef = useRef(null);
@@ -80,14 +78,14 @@ const Home = () => {
       </div>
       <div className="row m-3">
         <div className="col-4 mx-auto text-center">
-          <button
+          {/* <button
             className={`btn btn-${isTrafficLightOn ? "danger" : "success"}`}
             onClick={() => {
               setIsTrafficLightOn(!isTrafficLightOn);
             }}
           >
             {isTrafficLightOn ? "STOP Traffic Light" : "START Traffic Light"}
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
