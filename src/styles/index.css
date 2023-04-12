@@ -1,4 +1,6 @@
-
+.glow {
+    filter: drop-shadow(0 0 0.75rem #fff);
+  }
 /* 
 
     You can write your own styles here...
